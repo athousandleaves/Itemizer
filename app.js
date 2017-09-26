@@ -20,3 +20,9 @@ if (!('webkitSpeechRecognition' in window)) {
     talking = false;
     micButton.style.color = "black";
   }
+
+  talker.onresult = function(clip){
+    transcript += clip.results[0][0].transcript;
+    displayList(listSplitter(transcript));
+  }
+}
