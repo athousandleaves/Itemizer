@@ -7,4 +7,6 @@ listText.style.display = "none";
 
 if (!('webkitSpeechRecognition' in window)) {
   alert("Web Speech API is not supported by this browser. Please upgrade to Chrome version 25 or later.");
-}
+} else {
+  var talker = new webkitSpeechRecognition();
+  talker.continuous = true;
