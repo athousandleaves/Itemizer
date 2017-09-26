@@ -44,3 +44,9 @@ function displayList(list) {
   listText.style.display = "block";
   var unordered = document.createElement('ul');
   listText.appendChild(unordered);
+
+  for (var x = 0; x < list.length; x++) {
+    var segment = document.createElement('li');
+    segment.innerHTML = list[x];
+    unordered.appendChild(segment);
+  }
