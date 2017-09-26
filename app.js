@@ -50,3 +50,13 @@ function displayList(list) {
     segment.innerHTML = list[x];
     unordered.appendChild(segment);
   }
+
+  var editor = document.createElement("button");
+  var editIcon = document.createElement("i");
+  editIcon.className = "fa fa-pencil-square-o";
+  editIcon.setAttribute('aria-hidden', 'true');
+  editor.style.cssFloat = "right";
+  editIcon.setAttribute('id', 'editIcon');
+  editor.setAttribute('id', 'editButton');
+  unordered.appendChild(editor);
+  editor.appendChild(editIcon);
