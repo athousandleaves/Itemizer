@@ -10,3 +10,8 @@ if (!('webkitSpeechRecognition' in window)) {
 } else {
   var talker = new webkitSpeechRecognition();
   talker.continuous = true;
+
+  talker.onstart = function(){
+    talking = true;
+    micButton.style.color = "#B6412C";
+  }
