@@ -39,3 +39,8 @@ function startButton(event) {
 function listSplitter(string) {
   return string.split(' and ');
 }
+
+function displayList(list) {
+  listText.style.display = "block";
+  var unordered = document.createElement('ul');
+  listText.appendChild(unordered);
