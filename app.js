@@ -35,3 +35,7 @@ function startButton(event) {
   transcript = '';
   talker.start();
 }
+
+function listSplitter(string) {
+  return string.split(' and ');
+}
