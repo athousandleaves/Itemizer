@@ -60,3 +60,13 @@ function displayList(list) {
   editor.setAttribute('id', 'editButton');
   unordered.appendChild(editor);
   editor.appendChild(editIcon);
+
+  editor.addEventListener('click', function() {
+    if (!listText.isContentEditable) {
+    listText.setAttribute('contenteditable', 'true');
+    } else {
+      listText.setAttribute('contenteditable', 'false');
+    }
+  })
+
+}
