@@ -26,3 +26,12 @@ if (!('webkitSpeechRecognition' in window)) {
     displayList(listSplitter(transcript));
   }
 }
+
+function startButton(event) {
+  if (talking) {
+    talker.stop();
+    return;
+  }
+  transcript = '';
+  talker.start();
+}
