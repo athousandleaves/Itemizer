@@ -1,0 +1,91 @@
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 4em;
+  background-color: #F0EDEC;
+}
+
+.focus {
+    margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .focus {
+    padding-top: 1em;
+    max-width: 85%;
+  }
+  .explain {
+    font-size: 12px !important;
+  }
+}
+
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus{
+border:none;
+outline:none;
+}
+
+.intro {
+    font-family: 'Oxygen', serif;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.mic {
+    font-family: 'Oxygen', serif;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding-bottom: 0.6em;
+}
+
+#micbutton {
+    font-size: 90px !important;
+}
+
+#editButton {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding-bottom: 0.6em;
+}
+
+#editIcon {
+  font-size: 22px !important;
+}
+
+.explain {
+    font-size: 18px;
+}
+
+.list {
+    font-family: 'Oxygen', serif;
+    margin: 0 auto;
+    max-width: 300px;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2);
+    padding: 2px 16px 13px;
+    background-color: #F8F8F8;
+}
+
+.list:hover {
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-size: 50px !important;
+}
+
+footer {
+    padding-top: 4em;
+}
