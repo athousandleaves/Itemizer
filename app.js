@@ -15,3 +15,8 @@ if (!('webkitSpeechRecognition' in window)) {
     talking = true;
     micButton.style.color = "#B6412C";
   }
+
+  talker.onend = function() {
+    talking = false;
+    micButton.style.color = "black";
+  }
